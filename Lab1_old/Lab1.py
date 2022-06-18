@@ -1,4 +1,4 @@
-# from turtle import distance
+from turtle import distance
 import pandas
 import matplotlib.pyplot as plt
 import numpy as np
@@ -28,20 +28,10 @@ distances = np.linalg.norm(X - new_data_point, axis=1)
 k = 3
 nearest_neighbor_ids = distances.argsort()[:k]
 nearest_neighbor_rings = Y[nearest_neighbor_ids]
-print(nearest_neighbor_rings)
 
-# x_train_ids = np.random.randint(Y.shaper[0], size=round(len(Y)*0.8))
-# x_test_ids = np.random.randint(Y.shaper[0], size=round(len(Y)*0.2))
-# print(len(x_train_ids), len(x_test_ids))
 
 # def splitTrainTest(data, percent):
 #     trainData = []
 #     trainDataLen = round(len(data) * (percent / 100))
 #     for row in data:
 #         trainData
-
-# def knn(u, XY, w):
-#     labels = []
-#     XY_sort = sort(X, key=euclidean_distance(X(i)))
-#     for i in XY_sort[
-
